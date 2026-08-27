@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family:
+        Arial,
+        Tahoma,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7eaff,
+            #eee6ff
+        );
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+.chat-container {
+
+    width: 100%;
+
+    max-width: 480px;
+
+    height: 720px;
+
+    background: white;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px
+        rgba(80,40,100,0.2);
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* HEADER */
+
+.chat-header {
+
+    background:
+        linear-gradient(
+            135deg,
+            #9b59b6,
+            #6c5ce7
+        );
+
+    color: white;
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.bot-avatar {
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #8e44ad;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 26px;
+}
+
+
+.chat-header h1 {
+
+    font-size: 20px;
+}
+
+
+.chat-header p {
+
+    font-size: 12px;
+
+    opacity: .9;
+}
+
+
+.online {
+
+    margin-left: auto;
+
+    font-size: 11px;
+}
+
+
+/* CHAT */
+
+.chat-box {
+
+    flex: 1;
+
+    padding: 20px;
+
+    overflow-y: auto;
+
+    background: #faf8ff;
+}
+
+
+.message {
+
+    display: flex;
+
+    margin-bottom: 15px;
+}
+
+
+.message.bot {
+
+    justify-content: flex-start;
+}
+
+
+.message.user {
+
+    justify-content: flex-end;
+}
+
+
+.bubble {
+
+    max-width: 85%;
+
+    padding: 13px 16px;
+
+    border-radius: 18px;
+
+    background: white;
+
+    box-shadow:
+        0 3px 10px
+        rgba(0,0,0,.07);
+
+    line-height: 1.5;
+
+    font-size: 14px;
+}
+
+
+.message.user .bubble {
+
+    background: #8e44ad;
+
+    color: white;
+}
+
+
+/* MENU */
+
+.menu {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+
+.menu button {
+
+    border: none;
+
+    padding: 13px;
+
+    border-radius: 14px;
+
+    background: white;
+
+    color: #6c3483;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 3px 10px
+        rgba(0,0,0,.08);
+}
+
+
+.menu button:hover {
+
+    background: #f2e7ff;
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* PRODUCT */
+
+.product {
+
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    margin: 10px 0;
+
+    box-shadow:
+        0 3px 12px
+        rgba(0,0,0,.08);
+}
+
+
+.product img {
+
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+}
+
+
+.product-info {
+
+    padding: 12px;
+}
+
+
+.product-name {
+
+    font-weight: bold;
+
+    color: #6c3483;
+
+    margin-bottom: 5px;
+}
+
+
+.price {
+
+    color: #d35400;
+
+    font-weight: bold;
+
+    margin: 5px 0;
+}
+
+
+.product button {
+
+    width: 100%;
+
+    border: none;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    background: #8e44ad;
+
+    color: white;
+
+    cursor: pointer;
+
+    margin-top: 8px;
+}
+
+
+/* CHOICE */
+
+.choice-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 10px;
+}
+
+
+.choice-buttons button {
+
+    border: none;
+
+    padding: 10px 15px;
+
+    border-radius: 12px;
+
+    background: #ead7f5;
+
+    color: #6c3483;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* INPUT */
+
+.input-area {
+
+    display: flex;
+
+    padding: 12px;
+
+    border-top:
+        1px solid #eee;
+
+    background: white;
+
+    gap: 8px;
+}
+
+
+.input-area input {
+
+    flex: 1;
+
+    border:
+        1px solid #ddd;
+
+    border-radius: 20px;
+
+    padding:
+        12px 15px;
+
+    outline: none;
+}
+
+
+.input-area button {
+
+    border: none;
+
+    background: #8e44ad;
+
+    color: white;
+
+    padding:
+        0 20px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 0;
+    }
+
+    .chat-container {
+
+        height: 100vh;
+
+        border-radius: 0;
+    }
+
+}
