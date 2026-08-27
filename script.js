@@ -9,7 +9,7 @@ const products = [
         price: 290,
 
         image:
-        "images/tshirt.jpg",
+        "tshirt.jpg",
 
         description:
         "เสื้อยืดแฟชั่น เนื้อผ้านุ่ม ใส่สบาย เหมาะสำหรับวันสบาย ๆ",
@@ -31,7 +31,7 @@ const products = [
         price: 590,
 
         image:
-        "images/jeans.jpg",
+        "jeans.jpg",
 
         description:
         "กางเกงยีนส์เอวสูง ทรงสวย ใส่ได้ทั้งวัน",
@@ -53,7 +53,7 @@ const products = [
         price: 690,
 
         image:
-        "images/dress.jpg",
+        "dress.jpg",
 
         description:
         "เดรสยีนส์แฟชั่น ดีไซน์เรียบหรู",
@@ -75,7 +75,7 @@ const products = [
         price: 490,
 
         image:
-        "images/knit.jpg",
+        "knit.jpg",
 
         description:
         "เสื้อไหมพรมเนื้อนุ่ม ใส่สบาย",
@@ -97,7 +97,7 @@ const products = [
         price: 890,
 
         image:
-        "images/blazer.jpg",
+        "blazer.jpg",
 
         description:
         "เบลเซอร์แฟชั่น เหมาะกับลุคทำงาน",
