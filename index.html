@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>LUNA BOT - LUNA FASHION</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="chat-container">
+
+    <div class="chat-header">
+
+        <div class="bot-avatar">
+            🌙
+        </div>
+
+        <div>
+            <h1>LUNA BOT</h1>
+
+            <p>
+                ผู้ช่วยช้อปปิ้ง • LUNA FASHION
+            </p>
+        </div>
+
+        <div class="online">
+            ● ออนไลน์
+        </div>
+
+    </div>
+
+
+    <div id="chatBox" class="chat-box">
+
+        <div class="message bot">
+
+            <div class="bubble">
+
+                🌙 สวัสดีค่ะ
+                ยินดีต้อนรับสู่
+                <b>LUNA FASHION</b>
+
+                <br><br>
+
+                ฉันคือ
+                <b>LUNA BOT</b>
+                ผู้ช่วยช้อปปิ้งออนไลน์ของคุณค่ะ 💜
+
+                <br><br>
+
+                วันนี้ให้ฉันช่วยอะไรดีคะ?
+
+            </div>
+
+        </div>
+
+
+        <div class="menu">
+
+            <button onclick="showProducts()">
+                🛍️ ดูสินค้า
+            </button>
+
+            <button onclick="recommendProduct()">
+                ✨ แนะนำสินค้า
+            </button>
+
+            <button onclick="showSize()">
+                📏 ดูตารางไซซ์
+            </button>
+
+            <button onclick="endChat()">
+                👋 จบการสนทนา
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="input-area">
+
+        <input
+            type="text"
+            id="userInput"
+            placeholder="พิมพ์ข้อความ..."
+            onkeypress="handleEnter(event)"
+        >
+
+        <button onclick="sendMessage()">
+            ส่ง
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
